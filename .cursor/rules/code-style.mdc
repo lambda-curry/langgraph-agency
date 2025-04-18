@@ -1,0 +1,49 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Code Style Guide
+
+## TypeScript Guidelines
+
+1. **Types and Interfaces**
+   - Prefer interfaces over types for object definitions
+   - Use descriptive names with proper casing
+   - Export interfaces that are used across files
+
+2. **Imports**
+   - Use named imports from specific paths
+   - Group imports by external packages first, then internal modules
+   - Import types separately using `import type`
+
+3. **Functions**
+   - Use arrow functions for consistency
+   - Provide proper TypeScript types for parameters and return values
+   - Async functions should properly handle errors
+
+## Formatting
+
+The project uses Biome for formatting with the following rules:
+- 2 space indentation
+- 80 character line width
+- Single quotes for strings
+- Semicolons required
+- ES5 trailing commas
+
+## Error Handling
+
+- Always use typed error handling with try/catch blocks
+- Provide descriptive error messages
+- Log errors with proper context
+
+## Comments and Documentation
+
+Use section headers for code organization:
+```typescript
+/* -------------------------------------------------------------------------- */
+/*                               Section Name                                   */
+/* -------------------------------------------------------------------------- */
+```
+
+Document complex logic and business rules with clear comments.

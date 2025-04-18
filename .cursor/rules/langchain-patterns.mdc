@@ -1,0 +1,41 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# LangChain and LangGraph Patterns
+
+## Agent Creation
+
+1. **Specialized Agents**
+   - Use `createSpecializedAgent` for consistent agent creation
+   - Always provide a unique name for each agent
+   - Include clear system prompts describing agent roles
+   - Attach relevant tools to agents that need them
+
+2. **Supervisor Pattern**
+   - Use `createSupervisor` for managing agent teams
+   - Provide clear process steps in supervisor prompts
+   - Set appropriate `outputMode` based on needs
+   - Name supervisors descriptively
+
+## Tool Implementation
+
+1. **DynamicStructuredTool**
+   - Use Zod for input validation
+   - Provide clear descriptions for each tool
+   - Handle API errors appropriately
+   - Return structured JSON responses
+
+## Type Safety
+
+- Use proper type annotations with LangChain classes
+- Extend `AgentState` interface for supervisor state
+- Use type imports from '@langchain/core'
+
+## Best Practices
+
+- Initialize LLM with appropriate temperature (0 for deterministic tasks)
+- Use appropriate model names for different tasks
+- Handle API rate limits and errors
+- Log important events and state changes

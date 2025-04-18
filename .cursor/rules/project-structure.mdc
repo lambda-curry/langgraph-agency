@@ -1,0 +1,33 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Project Structure Guide
+
+This is a TypeScript project implementing an SEO analysis agency using LangGraph and various APIs.
+
+## Main Components
+
+The main entry point is [seo-agency.ts](mdc:seo-agency.ts), which contains:
+
+1. **Setup & Types** - Environment variables, API clients, and TypeScript interfaces
+2. **Tool Calls** - Implementation of SERP and Lighthouse API tools
+3. **Agents** - Specialized agents for different SEO tasks
+4. **Supervisors** - Hierarchical management of agent teams
+5. **Top-level Agency** - Main orchestration of the workflow
+
+## Configuration Files
+
+- [biome.json](mdc:biome.json) - Biome formatter and linter configuration
+- [package.json](mdc:package.json) - Project dependencies and scripts
+- [tsconfig.json](mdc:tsconfig.json) - TypeScript configuration
+
+## Code Organization
+
+The codebase follows a modular structure with clear section demarcation using comments:
+```typescript
+/* -------------------------------------------------------------------------- */
+/*                               Section Name                                   */
+/* -------------------------------------------------------------------------- */
+```

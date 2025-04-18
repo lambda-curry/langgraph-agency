@@ -1,0 +1,26 @@
+{
+  "name": "seo-agency",
+  "version": "1.0.0",
+  "description": "SEO Agency using LangGraph and various APIs",
+  "module": "seo-agency.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run seo-agency.ts"
+  },
+  "dependencies": {
+    "@langchain/core": "latest",
+    "@langchain/langgraph": "latest",
+    "@langchain/langgraph-supervisor": "latest",
+    "@langchain/openai": "latest",
+    "langfuse": "^3.37.2",
+    "langfuse-langchain": "^3.37.2",
+    "langfuse-node": "^3.37.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
